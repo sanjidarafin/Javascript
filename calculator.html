@@ -1,0 +1,124 @@
+<html>
+
+<head>
+<link rel="stylesheet"type="text/css"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+
+<script>
+  //variable
+    var number=100;
+	var number1;
+	var number2;
+	function Calculator()
+	{
+		console.log("My first number is",number1);
+		console.log("My second number is",number2);
+		number1= document.getElementById("operand1").value;
+		number2= document.getElementById("operand2").value;
+		operator= document.getElementById("operator").value;
+		
+		
+		
+		
+		if(isNaN(number1) || (isNaN(number2)){
+			document.getElementById("result").innerHTML="insert a number"
+		}
+		else{
+			number1 = Number(number1);
+		    number2 = Number(number2);
+			
+		
+		
+		// additon
+		if(operator=="+")
+		{
+			document.getElementById("result").innerHTML=(number1+number2);
+		}
+		//subtraction
+		else if(operator=="-")
+		{
+			document.getElementById("result").innerHTML=(number1-number2);
+		}
+		//multiplication
+		else if(operator=="*")
+		{
+			document.getElementById("result").innerHTML=(number1*number2);
+		}
+		//division
+		else if(operator=="/")
+		{
+				if(number2==0){
+					document.getElementById("result").innerHTML=" Infinity !  Second number muust be zero";
+				}
+				else{
+					document.getElementById("result").innerHTML=(number1/number2);
+				}
+			
+		}
+		
+		else
+		{
+			document.getElementById("result").innerHTML= "insert your number";
+		}
+        
+	}
+		
+		
+    }
+	
+
+</script>
+</head>
+
+
+<body>
+
+	<h2> Calculator</h2>
+	<input type="text" id="operand1" placeholder="number1"/><br />
+	<input type="text" id="operand2" placeholder="number2"/><br />
+	<input type="text" id="operator" placeholder="operation"/><br />
+	
+	<div id="result"> Result</div>
+
+	<button onClick="Calculator()">click me</button>
+	<br />  <br />   <br />  <br />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+<a class="btn btn-default" href="#" role="button">Link</a>
+<button class="btn btn-primary" type="submit">Button</button>
+<input class="btn btn-success" type="button" value="Input">
+<input class="btn btn-info" type="submit" value="Submit">
+<input class="btn btn-danger" type="submit" value="Submit">
+<input class="btn btn-warning" type="submit" value="Submit">
+<input class="btn btn-link" type="submit" value="Submit">
+
+<div class="well">
+jfuruuethgui
+</div>
+
+
+<span class="badge">30 </span>
+
+</body>
+</html>

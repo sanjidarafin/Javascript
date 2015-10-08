@@ -1,0 +1,114 @@
+<html>
+<head>
+
+<head>
+<body>
+<div id="str"> </div>
+	<script>
+		var car1="<h2>volvo car</h2>"
+		var car2="<h2>toyota car</h2>"
+		
+		document.getElementById("str").innerHTML=car1 +"<br>"+ car2
+		
+	
+	</script>
+
+
+
+	<div id="quot"></div>
+
+	<script>
+		var answer1="he's all right"
+		var answer2="she is called 'sanjida'"
+		var answer3='she is called "sanjida"'
+		
+		document.getElementById("quot").innerHTML=answer1 +"<br>"+ answer2 + "<br>" + answer3
+
+	</script>
+	
+	
+	<p id="strlen"></p>
+
+<script>
+var txt = "Bangladesh";
+document.getElementById("strlen").innerHTML = txt.length;
+</script
+
+
+<p id="escapechar"></p>
+
+
+<script>
+var x = 'It\'s alright';
+var y = "We are the so-called \"Vikings\" from the north.";
+
+document.getElementById("escapechar").innerHTML = x + "<br>" + y; 
+
+</script>
+
+
+
+
+<div id="cars"></div>
+<script>
+var car={color:"black", tiares:"MRF", seats:"4"}
+
+
+ 
+document.getElementById("cars").innerHTML = car.color; 
+
+</script>
+
+
+
+
+
+<p id="p1"> plz locale where 'local' occurs.</p>
+<button onclick="mFunction()">press it </button>
+<p id="strpos"> </p>
+
+<script>   
+
+function myFunction(){
+	var str = document.getElementById("p1").innerHTML; 
+	var pos=str.indexOf("local");
+	document.getElementById("strpos").innerHTML=pos
+
+
+}
+
+
+</script>
+
+
+<p>The slice() method extract a part of a string
+and returns the extracted parts in a new string:</p>
+
+<p id="sls"></p>
+
+<script>
+var str = "Apple, Banana, Kiwi";
+document.getElementById("sls").innerHTML = str.slice(4,13);
+</script>
+
+
+
+
+
+
+
+<p>The substr() method extract a part of a string
+and returns the extracted parts in a new string:</p>
+
+<p id="substrs"></p>
+
+<script>
+var str = "Bangladesh";
+document.getElementById("substrs").innerHTML = str.substring(7,13);
+</script
+
+</body>
+
+
+
+</html>

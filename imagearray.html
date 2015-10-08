@@ -1,0 +1,42 @@
+<!doctype HTML>
+<html>
+	<head>
+
+		<script>
+			var imagePath = ["images/cutee.jpg","images/cutee1.jpg","images/cutee2.jpg","images/cutee3.jpg"];
+
+			var imageIndex = 0; 
+
+			function nextImage() {
+				var img = document.getElementById("sample") 
+					img.src=imagePath[imageIndex];
+					imageIndex++;
+				
+				if(imageIndex>3){
+					imageIndex=0;
+					}
+			}
+			
+			
+			function previousImage() {
+				var img = document.getElementById("sample") 
+					img.src=imagePath[imageIndex];
+					imageIndex--;
+				
+				if(imageIndex<0){
+					imageIndex=3;
+					}
+			} 
+			setInterval(nextImage,1000)
+			setInterval(previousImage,1000)
+		</script>
+	</head>
+	<body>
+	<!--Main Content of the page -->
+		<img id="sample" src="images/cutee.jpg" style="height:120px;width:150px;">
+		<p align="right"><button onclick="nextImage()">Next</button></p>
+		<p align="left"><button onclick="previousImage()">Previous</button></p>
+		
+	</body>
+
+</html>

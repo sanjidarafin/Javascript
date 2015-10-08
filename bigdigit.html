@@ -1,0 +1,73 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+
+<script>
+
+var num;
+
+
+output=[
+       ];
+
+function bigdigit(){
+
+     num = document.getElementById("number").value;
+	 
+	 if(isNaN(num))
+	 {
+	    document.getElementById("result").innerHTML = "This is not a number";
+	 }
+	 
+	 else{
+	 
+	    number = Number(num);
+		
+		len = num.length;
+		
+		document.write(len);
+		
+		document.write("<br/>");
+		document.write("<br/>");
+
+     while(number){
+  
+         output.push(number%10);
+         number = Math.floor(number/10);
+
+        }
+
+console.log(output.reverse().join(','));
+
+document.write(output);
+
+         
+		 }
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div id="container">
+
+<br><br>
+
+
+
+<h4><font color="green">Enter digits:</font></h4><br><input type="text" id="number" placeholder="number"/></br>
+
+
+<div id="result"></div>
+<br><br>
+<p>The lenght of the number:</p>
+
+<button type="button" class="btn btn-primary" onClick="bigdigit()">Separated digits</button>
+
+<div>
+
+</body>
+</html>
