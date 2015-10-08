@@ -1,0 +1,48 @@
+<html>
+<head>
+	<script>
+		var item;
+		
+		
+		function items(){
+
+     item = document.getElementById("dynamicInput").value;
+	 
+	 if(isNaN(num))
+	 {
+	    document.getElementById("result").innerHTML = "This is not a number";
+	 }
+	 
+	 else{
+	 
+	    number = Number(item);
+		
+		
+		
+		
+		
+		
+		document.write("<br/>");
+	
+	
+	
+	</script>
+
+</head>
+
+<body>
+
+	<script src="/wp-includes/js/addInput.js" language="Javascript" type="text/javascript"></script>
+
+	<form method="POST">
+	
+     <div id="dynamicInput">
+          Items:<br><input type="text" name="myInputs[]">
+     </div>
+     <input type="button" value="Add Items" onClick="addInput('dynamicInput');">
+</form>
+
+
+
+</body>
+</html>

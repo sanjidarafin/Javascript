@@ -1,0 +1,50 @@
+<html>
+<head>
+<body>
+<div id="div1">
+    
+	hello
+    
+	<h1 id="para1">Hello FTFL!!</h1>
+	<h1 id="para2">Hello Comilla!!</h1>
+
+</div>
+
+<script>
+
+var divTag = document.getElementById("div1");
+var newPara = document.createElement("h1");
+
+var text = document.createTextNode("Hello PHP Group!!");
+
+newPara.appendChild(text);
+//divTag.appendChild(newPara);
+
+var child1 = divTag.childNodes[0];
+var child2 = divTag.nextSibling;
+
+console.log(child1);
+divTag.replaceChild(newPara,child2);
+
+//var parachild1 = divTag.firstChild;
+//divTag.removeChild(para1);
+
+//divTag.replaceChild(newPara,para1);
+
+
+//divTag.insertBefore(newPara,para1);
+
+//var para2 = document.getElementById("para2");
+//divTag.replaceChild(newPara,para2);
+
+
+console.log();
+
+
+</script>
+
+</body>
+
+</head>
+
+</html>

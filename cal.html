@@ -1,0 +1,113 @@
+<html>
+
+  <head>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+	
+	<script>
+	
+	   //var number=100;
+	   var number1;
+	   var number2;
+	   var operator;
+	   
+	   function calculator(){
+	   
+	       console.log("My number is",number);
+		   number1 = document.getElementById("operand1").value;
+		   number2 = document.getElementById("operand2").value;
+		   operator = document.getElementById("operator").value;
+		   
+		   if(isNaN(number1) && isNaN(number2))
+		   {
+		      document.getElementById("result").innerHTML = "Please enter a number";
+		    
+		   }
+		   else
+		   {
+		      number1 = Number(number1);
+			  number2 = Number(number2);
+			  
+			  
+			  if(operator=="+")
+			  {
+			  
+			    result = number1+number2;
+				document.getElementById("result").innerHTML=result;
+			  }
+			  
+			  
+			       else if(operator=="-")
+				   {
+				      
+					  result = number1-number2;
+					  document.getElementById("result").innerHTML=result;
+				   }
+				   
+				    
+					       else if(operator=="*")
+						   {
+						   
+						     result = number1*number2;
+							 document.getElementById("result").innerHTML=result;
+						   }
+						   
+						           else if(operator=="/")
+								   {
+								     
+									 if(number2==0)
+									 {
+									  
+									    document.getElementById("result").innerHTML="Number2 should not be zero";
+									 
+									 }
+									 
+									 else
+									 {
+									    
+										result = number1/number2;
+										document.getElementById("result").innerHTML=result;
+									 
+									 }
+								   
+								   }
+								   
+								   
+				else
+                
+				 document.getElementById("result").innerHTML="Allowed operators are +,-,*,/";
+				 
+				 
+				 
+				   
+				   
+		   }
+		   
+		   
+	   
+		   
+	   
+	   
+	   
+	   }
+	
+	
+	
+	</script>
+	
+	
+						
+ </head>
+ 
+ <body>
+	<div class="container">
+	<h2><font color="blue">Calculator</font></h2>
+	<input type="text" id="operand1" placeholder="number1"/></br>
+	<input type="text" id="operand2" placeholder="number2"/></br>
+  
+	<input type="text" id="operator" placeholder="operator"/></br>
+
+	<div id="result">result</div>
+	<br>
+	<button class="btn btn-primary" onClick="calculator()">Calculator</button>
+ </body>
+<html>

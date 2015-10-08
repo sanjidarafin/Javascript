@@ -1,0 +1,78 @@
+<html>
+ 
+  <head>
+  
+    <script>
+  
+     var imgPath=["Image/chanpa.jpg","Image/me.jpg","Image/group.jpg","Image/images.jpg"];
+	 
+	 var index=0;
+	 
+	function next()
+	{
+	  
+	  index=index+1;
+	  
+	  if(index>3)
+	  {
+	    index=0;
+	  
+	 }
+	 console.log(index,imgPath[index]);
+	 
+	 var imagTag=document.getElementById("pic");
+	 
+	 imagTag.src= imgPath[index];
+	  
+	
+	}
+	
+	function privious()
+	{
+	  
+	  index=index-1;
+	  
+	  if(index<0)
+	  {
+	    index=3;
+	  
+	 }
+	 console.log(index,imgPath[index]);
+	 
+	 var imagTag=document.getElementById("pic");
+	 
+	 imagTag.src= imgPath[index];
+	  
+	
+	}
+	
+	
+	
+	
+	   
+	   //setInterval(next, 1000);
+	
+	
+	
+	
+	</script>
+  
+  </head>
+    
+	 <body>
+	    
+		<img src="Image/chanpa.jpg" id="pic"/>
+		<br>
+		<button onclick="next()">Next</button>
+		<button onclick="privious()">Privious</button>
+		
+	 
+	 
+	 </body>
+  
+
+
+
+
+
+</html>

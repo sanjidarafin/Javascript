@@ -1,0 +1,54 @@
+<html>
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+
+<script>
+
+function Slice(){
+
+    var string1 ="bangladesh";
+	
+	document.getElementById("input").innerHTML = string1;
+	
+	var string2="";
+	 
+	
+	
+	for(var i=1; i<7; i++){
+	
+	    string2 = string2+string1[i];
+	     
+	}
+	
+	 console.log(string2);
+	 
+	  document.getElementById("string").innerHTML = string2;
+	 
+	 
+	 
+}	
+
+ 
+
+</script>
+
+
+</head>
+
+<body>
+
+<div id="input"></div>
+
+<br>
+
+
+<div id="string"></div>
+<br>
+
+<button class="btn btn-success" onClick="Slice()" value="add item">Click</button>
+
+</body>
+
+</html>

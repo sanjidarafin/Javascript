@@ -1,0 +1,42 @@
+<html>
+<head>
+<script>
+
+var n=3;
+
+var str="";
+
+
+
+for(i=1; i<=n; i++){
+    
+	str=" ";
+    
+	for(j=1; j<=(n-i); j++){
+	
+	   str=str+" ";
+   
+       document.write("&nbsp");
+	   
+	}
+       
+	   
+	   for(j=1; j<=2*i-1; j++){
+	     
+		 str=str+"*"
+	     
+		 document.write("*");
+
+        }
+		console.log(str);
+    document.write("<br/>");
+ }
+ 
+ 
+
+
+</script>
+
+</head>
+
+</html>

@@ -1,0 +1,82 @@
+<html>
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+
+<script>
+
+function Match(){
+
+var str1="football";
+var str2="bal";
+
+document.getElementById("input1").innerHTML = str1;
+document.getElementById("input2").innerHTML = str2;
+
+var t;
+var p;
+var b;
+
+for(var i=0; i<str1.length; i++)
+{
+
+  if(str1[i]==str2[0])
+  {
+  
+    t=i;
+	b=true;
+	
+	for(var j=1; j<str2.length; j++)
+	{
+	
+	   if(str1[t+1] != str2[j])
+	   {
+	   
+	      b=false;
+		  
+	   
+	   }
+	   
+	   t++;
+	
+	}
+	
+	if(b=true)
+	{
+	  
+	  p=i;
+	
+	}
+  
+  }
+
+}
+
+console.log(p);
+document.getElementById("string").innerHTML = p;
+
+}
+
+
+</script>
+
+</head>
+
+<body>
+
+<div id="input1"></div>
+<br>
+<div id="input2"></div>
+
+<br>
+
+<div id="string"></div>
+<br>
+
+<button class="btn btn-success" onClick="Match()" value="add item">Click</button>
+
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<html>
+
+<head>
+
+ <link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+
+<script>
+
+function subString(){
+
+    var str1 ="bangladesh";
+	
+	document.getElementById("input").innerHTML = str1;
+	
+	var str2="";
+	
+	var start=1;
+	var length=5;
+	
+	
+	for(i=1; i<=length; i++){
+	
+	    str2 = str2+str1[start];
+		
+		start++;
+	     
+	}
+	
+	
+	
+	 console.log(str2);
+	 
+	 document.getElementById("string").innerHTML = str2;
+}	 
+	 
+	 
+
+</script>
+
+
+</head>
+
+<body>
+
+<div id="input"></div>
+
+<br>
+
+<div id="string"></div>
+<br>
+
+<button class="btn btn-success" onClick="subString()" value="add item">Click</button>
+
+</body>
+
+</html>

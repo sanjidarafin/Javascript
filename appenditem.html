@@ -1,0 +1,60 @@
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+
+
+
+<script type="text/javascript">
+    var index = 1;
+function insertRow(){
+            var table=document.getElementById("myTable");
+            var row=table.insertRow(table.rows.length);
+            var cell1=row.insertCell(0);
+            var t1=document.createElement("input");
+                t1.id = "item"+index;
+                cell1.appendChild(t1);
+				
+            var cell2=row.insertCell(1);
+            var t2=document.createElement("input");
+                t2.id = "quantity"+index;
+                cell2.appendChild(t2);
+				
+            var cell3=row.insertCell(2);
+            var t3=document.createElement("input");
+                t3.id = "amount"+index;
+                cell3.appendChild(t3);
+            var cell4=row.insertCell(3);
+           
+      index++;
+
+}
+</script>
+
+
+</script>
+
+
+
+
+
+</head>
+
+<body>
+
+<table id="myTable">
+        <th>Items</th>
+        <th>Qunatity</th>
+        <th>Amount</th>
+        <tr>
+            <td><input type="text" id="items" /></td>
+            <td><input type="text" id="quantity" /></td>
+            <td><input type="text" id="amount" /></td>
+           
+        </tr>
+			
+</table>
+
+<button type="button" class="btn btn-primary" onClick="insertRow()">Add Items</button>
+
+</body>
